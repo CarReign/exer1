@@ -26,7 +26,7 @@
     <p>Therefore, the multiplication of the two of those numbers is: <span id= "answerM">(placeholder for the answer)</span></p>
     <p>Therefore, the difference of the two of those numbers is: <span id= "answerD">(placeholder for the answer)</span></p>
     <input type="button" id="sumButton" value="Click to multiply!">
-    <input type="button" id="sumButton" value="Click to multiply!">
+    
     <input type="button" id="subtractButton" value="Click to Subtract!">
   <script>
     function displaySum() {
@@ -34,7 +34,7 @@
       let secondNum = Number(document.getElementById('secondNum').innerHTML)
     
       let total = firstNum * secondNum;
-      document.getElementById("answerM").innerHTML = ` ${firstNum} + ${secondNum}, equals to ${total}` ;
+      document.getElementById("answerM").innerHTML = ` ${firstNum} * ${secondNum}, equals to ${total}` ;
     }
 
     document.getElementById('sumButton').addEventListener("click", displaySum);
